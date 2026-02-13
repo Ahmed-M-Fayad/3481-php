@@ -2,9 +2,9 @@
 namespace App\Types; 
 class Type2
 {
-    public static function show()
+    public static function delet()
 {
-return " showed";
+return " deleted";
 }
 }
     
