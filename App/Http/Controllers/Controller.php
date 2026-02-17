@@ -11,7 +11,7 @@ class Controller
     }
     public static function show($id)
     {
-        // 
+        return "Show the id";
     }
     protected static function success($message)
     {
