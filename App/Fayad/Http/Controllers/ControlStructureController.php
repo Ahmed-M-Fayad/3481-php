@@ -50,6 +50,7 @@ public static function tempStatus(float $temp): string {
         return "Weatehr is Frozen.";
     }
 }
+
     public static function weekDaysMessage ($dayName) {
         // Use switch-case to get a message
         /**
