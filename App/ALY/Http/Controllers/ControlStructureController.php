@@ -78,5 +78,37 @@ else {echo "Frozen<br>";}
         }
     }
 
+    public static function getDayArName($enName)
+    {
+        switch ($enName){
+
+        case 'Sunday':
+            return 'الأحد';
+
+        case 'Monday':
+            return 'الأثنين';
+            
+        case 'Tuesday':
+            return 'الثلثاء';
+            
+        case 'Wednesday':
+            return 'الأربعاء';
+            
+        case 'Thursday':
+            return 'الخميس';
+            
+        case 'Friday':
+            return 'الجمعة';
+            
+        case 'Saturday':
+            return 'السبت';
+        
+        default:
+            return 'Wrong day name';
+        }
+        echo '<br>';
+        echo 'Switch-case completed successfully';
+    }
+
 
 }
