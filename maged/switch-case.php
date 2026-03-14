@@ -6,14 +6,17 @@ use App\Maged\Http\Controllers\ControlStructureController;
 ControlStructureController::switchCase(dayNumber: 3);
 
 
-$enDayName= 'Wednesday';
+$enDayName= 'saturday';
+$enDayName=   ucfirst(strtolower($enDayName));
+
 $arDayName = ControlStructureController::getDayArName($enDayName);
+ 
 echo "<h2>The Aabic day name for $enDayName is $arDayName</h2>";
 echo"<hr>";
 echo"<hr>";
+ 
+echo "<h2>The Arabic day name for $enDayName is $arDayName</h2>";
 
-$day = 'Friday';
-$message = ControlStructureController::weekDaysMessage($message);
-echo "<h2>Hey since it is $day so, $message</h2>";
-echo"<hr>";
-echo"<hr>";
+$weekDayMessage = ControlStructureController::weekDaysMessage($enDayName);
+echo "<h2>Today is $enDayName, $weekDayMessage</h2>";
+ 
